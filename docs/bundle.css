@@ -1,3 +1,11 @@
+:root {
+  --artecoWhite: white;
+  --artecoBlack: black;
+  --artecoLessBlack: #666666;
+  --artecoRed: #900000;
+  --artecoRedLight: #b90101;
+}
+
 .error-page.svelte-8fny4x {
   width: 760px;
   margin: 60px auto 0;
@@ -90,6 +98,7 @@ h4 {
   font-weight: normal;
   margin: 0;
   padding: 10px 0;
+  color: var(--artecoRed);
 }
 hr {
   border: none;
@@ -98,7 +107,7 @@ hr {
   background: #e7e7e7;
 }
 a {
-  color: #0064c8;
+  color: var(--artecoRed) !important;
   text-decoration: none;
 }
 a:hover {
@@ -154,7 +163,7 @@ button:focus {
   will-change: transform;
 }
 .right {
-  background: #232323;
+  background: var(--artecoBlack);
   color: #fff;
   max-width: 0;
 }
@@ -366,14 +375,16 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  border-bottom: 1px solid #dedede;
   background: #fff;
   z-index: 10000;
   display: flex;
   justify-content: space-between;
   height: 60px;
   overflow: hidden;
+  background-color: var(--artecoBlack);
+  border: 0px !important;
 }
+
 header .header-left,
 header .header-right {
   display: flex;
@@ -387,6 +398,8 @@ header .title {
   font-weight: 600;
   display: inline-block;
   vertical-align: middle;
+
+  color: var(--artecoWhite) !important;
 }
 header .hamburger-toggler {
   vertical-align: middle;
@@ -410,6 +423,7 @@ header .environment {
   padding: 0 30px;
   display: inline-block;
   vertical-align: middle;
+  color: var(--artecoWhite);
 }
 header .environment select {
   margin-bottom: 0;
